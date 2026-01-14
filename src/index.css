@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-txt{
+    background-image: linear-gradient(90% , red  , aqua);
+    background-clip: text;
+    color: transparent;
+}
