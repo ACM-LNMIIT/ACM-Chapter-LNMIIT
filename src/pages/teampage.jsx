@@ -3,16 +3,15 @@ import { teamMembers } from "../assets/assets.js";
 import TeamCard from "../components/ui/TeamCard.jsx";
 
 const TeamPage = () => {
-  const coreTeam = teamMembers.filter(m => m.domain === "core");
-  const webdTeam = teamMembers.filter(m => m.domain === "webd");
-  const aimlTeam = teamMembers.filter(m => m.domain === "aiml");
-  const creativeTeam = teamMembers.filter(m => m.domain === "creative");
-  const cpTeam = teamMembers.filter(m => m.domain === "cp");
+  const coreTeam = teamMembers.filter((m) => m.domain === "core");
+  const webdTeam = teamMembers.filter((m) => m.domain === "webd");
+  const aimlTeam = teamMembers.filter((m) => m.domain === "aiml");
+  const creativeTeam = teamMembers.filter((m) => m.domain === "creative");
+  const cpTeam = teamMembers.filter((m) => m.domain === "cp");
 
   return (
     <div className="min-h-screen bg-[#020B05] dark:bg-[#e8e9cd] text-white dark:text-gray-900 py-20 px-4">
       <div className="max-w-7xl mx-auto">
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,7 +40,6 @@ const TeamPage = () => {
 
         {/* CP DOMAIN  */}
         <Section title="Competitive Programming Leads" members={cpTeam} />
-
       </div>
     </div>
   );
@@ -71,4 +69,3 @@ const Section = ({ title, members, columns = "default" }) => {
     </div>
   );
 };
-

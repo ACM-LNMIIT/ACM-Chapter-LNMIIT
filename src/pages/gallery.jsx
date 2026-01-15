@@ -151,27 +151,27 @@
 import { useState } from "react";
 
 // Import all ACM images
-import acm1 from "../assets/acm1.jpg";
-import acm2 from "../assets/acm2.jpg";
-import acm3 from "../assets/acm3.jpg";
-import acm4 from "../assets/acm4.jpg";
-import acm5 from "../assets/acm5.jpg";
-import acm6 from "../assets/acm6.jpg";
+import acm1 from "../assets/acm1.webp";
+import acm2 from "../assets/acm2.webp";
+import acm3 from "../assets/acm3.webp";
+import acm4 from "../assets/acm4.webp";
+import acm5 from "../assets/acm5.webp";
+import acm6 from "../assets/acm6.webp";
 
 // Import all BOR images
-import bor1 from "../assets/bor1.jpg";
-import bor2 from "../assets/bor2.jpg";
-import bor3 from "../assets/bor3.jpg";
-import bor4 from "../assets/bor4.jpg";
-import bor5 from "../assets/bor5.jpg";
-import bor6 from "../assets/bor6.jpg";
+import bor1 from "../assets/bor1.webp";
+import bor2 from "../assets/bor2.jpeg";
+import bor3 from "../assets/bor3.webp";
+import bor4 from "../assets/bor4.webp";
+import bor5 from "../assets/bor5.webp";
+import bor6 from "../assets/bor6.webp";
 
 // Import all ESP images
-import esp1 from "../assets/esp1.jpg";
-import esp2 from "../assets/esp2.jpg";
-import esp3 from "../assets/esp3.jpg";
-import esp4 from "../assets/esp4.jpg";
-import esp5 from "../assets/esp5.jpg";
+import esp1 from "../assets/esp1.webp";
+import esp2 from "../assets/esp2.webp";
+import esp3 from "../assets/esp3.webp";
+import esp4 from "../assets/esp4.webp";
+import esp5 from "../assets/esp5.webp";
 import esp6 from "../assets/esp6.jpg";
 
 const Gallery = () => {

@@ -1,6 +1,6 @@
 // Import all images
 import acmSpeaker from "../assets/acmSpeaker.jpeg";
-import bigORush from "../assets/bigORush.jpeg";
+import bigORush from "../assets/bigORush.webp";
 import codeQuest from "../assets/codeQuest.jpeg";
 import orientation from "../assets/orientation.jpeg";
 import recruit from "../assets/recruit.jpeg";
