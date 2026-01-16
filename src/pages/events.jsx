@@ -270,7 +270,7 @@ const Events = () => {
       {isPast ? (
         <button
           onClick={() => setSelectedEvent(event)}
-          className="w-full bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white font-bold py-2 px-4 rounded-lg transition-all"
+          className="w-full bg-gray-700 hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg transition-all"
         >
           View Details
         </button>
@@ -285,7 +285,7 @@ const Events = () => {
                 alert("Registration link will be available soon!");
               }
             }}
-            className="flex-1 bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-all"
+            className="flex-1 bg-green-600 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-800 text-white font-bold py-2 px-4 rounded-lg transition-all"
           >
             Register Now
           </button>
@@ -293,7 +293,7 @@ const Events = () => {
           {/* View Details Button for upcoming events */}
           <button
             onClick={() => setSelectedEvent(event)}
-            className="flex-1 bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white font-bold py-2 px-4 rounded-lg transition-all"
+            className="flex-1 bg-gray-700 hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg transition-all"
           >
             View Details
           </button>
@@ -305,29 +305,7 @@ const Events = () => {
   return (
     <div className="min-h-screen dark:bg-[#e8e9cd] bg-[#020B05] text-white dark:text-gray-900 py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        {/* Past Events Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
-        >
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
-            Past Events
-          </h1>
-          <p className="text-xl text-gray-400 dark:text-gray-600">
-            Relive our previous successful events and workshops
-          </p>
-        </motion.div>
-
-        {/* Past Events Grid */}
-        <div className="grid md:grid-cols-2 gap-6 mb-20">
-          {pastEvents.map((event, idx) => (
-            <EventCard key={event.id} event={event} idx={idx} isPast={true} />
-          ))}
-        </div>
-
-        {/* Upcoming Events Section */}
+        {/* Upcoming Events Section - MOVED TO TOP */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -344,9 +322,32 @@ const Events = () => {
         </motion.div>
 
         {/* Upcoming Events Grid */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 mb-20">
           {upcomingEvents.map((event, idx) => (
             <EventCard key={event.id} event={event} idx={idx} isPast={false} />
+          ))}
+        </div>
+
+        {/* Past Events Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
+          {/* Duller color for past events header */}
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-gray-400 to-gray-500 bg-clip-text text-transparent">
+            Past Events
+          </h1>
+          <p className="text-xl text-gray-400 dark:text-gray-600">
+            Relive our previous successful events and workshops
+          </p>
+        </motion.div>
+
+        {/* Past Events Grid */}
+        <div className="grid md:grid-cols-2 gap-6">
+          {pastEvents.map((event, idx) => (
+            <EventCard key={event.id} event={event} idx={idx} isPast={true} />
           ))}
         </div>
 
@@ -368,7 +369,7 @@ const Events = () => {
               placeholder="Enter your email"
               className="flex-1 px-4 py-2 rounded-lg bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 border border-gray-700 dark:border-gray-300 focus:outline-none focus:border-green-500 dark:focus:border-green-700"
             />
-            <button className="px-6 py-2 bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold rounded-lg transition-all">
+            <button className="px-6 py-2 bg-green-600 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-800 text-white font-bold rounded-lg transition-all">
               Subscribe
             </button>
           </div>

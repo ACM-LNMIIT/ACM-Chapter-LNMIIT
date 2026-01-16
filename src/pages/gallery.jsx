@@ -168,8 +168,6 @@ import bor6 from "../assets/bor6.webp";
 
 // Import all ESP images
 import esp1 from "../assets/esp1.webp";
-import esp2 from "../assets/esp2.webp";
-import esp3 from "../assets/esp3.webp";
 import esp4 from "../assets/esp4.webp";
 import esp5 from "../assets/esp5.webp";
 import esp6 from "../assets/esp6.jpg";
@@ -196,8 +194,6 @@ const Gallery = () => {
 
     // ESP Talk Images (6)
     { id: 13, category: "esp", title: "ESP Talk Session 1", image: esp1 },
-    { id: 14, category: "esp", title: "ESP Talk Session 2", image: esp2 },
-    { id: 15, category: "esp", title: "ESP Talk Session 3", image: esp3 },
     { id: 16, category: "esp", title: "ESP Talk Session 4", image: esp4 },
     { id: 17, category: "esp", title: "ESP Talk Session 5", image: esp5 },
     { id: 18, category: "esp", title: "ESP Talk Session 6", image: esp6 },

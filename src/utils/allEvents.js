@@ -9,8 +9,31 @@ import recruit from "../assets/recruit.jpeg";
 import bor2 from "../assets/bor2.JPEG";
 import insightX from "../assets/insightX.JPEG";
 import promptWars from "../assets/promptWars.JPEG";
+import codeQuest2 from "../assets/codeQPoster.JPG";
 
-export const allEvents = {
+// Helper function to parse date strings
+const parseDate = (dateString) => {
+  if (!dateString || dateString.toLowerCase().includes("to be declared")) {
+    return new Date(0); // Far future for undefined dates
+  }
+
+  // Handle date ranges like "11/08/2025 - 17/08/2025"
+  if (dateString.includes("-")) {
+    const firstDate = dateString.split("-")[0].trim();
+    return parseDate(firstDate);
+  }
+
+  // Handle DD/MM/YYYY format
+  if (dateString.includes("/")) {
+    const [day, month, year] = dateString.split("/").map(Number);
+    return new Date(year, month - 1, day);
+  }
+
+  // Fallback for other formats
+  return new Date(dateString);
+};
+
+const allEventsData = {
   past: [
     {
       id: 1,
@@ -165,7 +188,7 @@ export const allEvents = {
     {
       id: 6,
       title: "Big O Rush 2.0",
-      date: "15/02/2025",
+      date: "to be declared",
       time: "2:00 PM",
       location: "LT-05, LNMIIT",
       description:
@@ -179,7 +202,7 @@ export const allEvents = {
     {
       id: 7,
       title: "InsightX: Data Science Workshop",
-      date: "20/02/2025",
+      date: "25/01/2025",
       time: "3:00 PM",
       location: "Data Lab, CS Department",
       description:
@@ -193,7 +216,7 @@ export const allEvents = {
     {
       id: 8,
       title: "Prompt Wars: AI Prompt Engineering Challenge",
-      date: "25/02/2025",
+      date: "to be declared",
       time: "10:00 AM",
       location: "AI Lab, LNMIIT",
       description:
@@ -204,7 +227,57 @@ export const allEvents = {
       popupImage: promptWars,
       registrationLink: "#register-promptwars",
     },
+    {
+      id: 9,
+      title: "Code Quest",
+      date: "17/01/2025",
+      time: "10:00 AM",
+      location: "AI Lab, LNMIIT",
+      description:
+        "Competitive coding contest featuring algorithmic challenges and problem-solving exercises.",
+      attendees: "80",
+      category: "workshop",
+      status: "upcoming",
+      popupImage: codeQuest2, // Using same image for now
+      registrationLink:
+        "https://docs.google.com/forms/d/e/1FAIpQLScTiJQieby_mEoTtMj6Iohe-q4RPSx6TrxDiJaDVNQS6tLi_g/viewform?usp=sharing&ouid=102111210845982472815",
+    },
   ],
+};
+
+// Sort functions
+const sortPastEvents = (events) => {
+  return [...events].sort((a, b) => {
+    const dateA = parseDate(a.date);
+    const dateB = parseDate(b.date);
+    return dateB - dateA; // Most recent first for past events
+  });
+};
+
+const sortUpcomingEvents = (events) => {
+  return [...events].sort((a, b) => {
+    const dateA = parseDate(a.date);
+    const dateB = parseDate(b.date);
+
+    // Handle "to be declared" dates (they get Date(0))
+    if (dateA.getTime() === 0 && dateB.getTime() === 0) {
+      return 0; // Both undefined, keep original order
+    }
+    if (dateA.getTime() === 0) return 1; // Undefined dates go last
+    if (dateB.getTime() === 0) return -1; // Defined dates come first
+
+    return dateA - dateB; // Earliest first for upcoming events
+  });
+};
+
+// Create sorted arrays
+const sortedPastEvents = sortPastEvents(allEventsData.past);
+const sortedUpcomingEvents = sortUpcomingEvents(allEventsData.upcoming);
+
+// Export sorted events
+export const allEvents = {
+  past: sortedPastEvents,
+  upcoming: sortedUpcomingEvents,
 };
 
 // Helper functions

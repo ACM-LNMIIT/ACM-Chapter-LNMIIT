@@ -164,7 +164,8 @@ import {
   CardTitle,
 } from "../ui/card";
 import { Button } from "../ui/button";
-import { FileText, X } from "lucide-react";
+import { X } from "lucide-react";
+import { FileText } from "lucide-react";
 import { blogsData } from "../../utils/blogsData";
 
 export function BlogPreview({
