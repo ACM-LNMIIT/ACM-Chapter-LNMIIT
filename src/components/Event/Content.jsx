@@ -1,6 +1,12 @@
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 
 function Content() {
+  // Define your Cloudinary image URLs
+  const img11Url =
+    "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768632668/Img11_rxdkrm.png";
+  const img22Url =
+    "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768633892/Img22_rkq2vv.png";
+
   return (
     <div data-aos="fade-up" data-aos-duration="1000" className="">
       <div className="h-[70vh] w-[100vw] flex flex-col-reverse gap-10 px-4 md:flex-row md:h-[50vh] md:items-center xl:h-[75vh] xl:w-[90vw] xl:gap-10 xl:-mt-8 xl:ml-20 2xl:mt-0">
@@ -16,15 +22,17 @@ function Content() {
           </p>
         </div>
 
+        {/* Updated with Cloudinary URL */}
         <div
-          style={{ backgroundImage: `url('/src/assets/img11.png')` }}
+          style={{ backgroundImage: `url('${img11Url}')` }}
           className="h-[70%] w-full bg-cover bg-center rounded-3xl md:w-[50%] md:h-[70%] xl:h-[70%] xl:w-[50%] 2xl:w-[40%] 2xl:h-[70%]"
         ></div>
       </div>
 
       <div className="h-[80vh] w-[100vw] flex flex-col gap-10 mt-20 px-4 py-4 md:flex-row md:h-[60vh] md:mt-0 md:items-center xl:h-[75vh] xl:w-[90vw] xl:-mt-36 xl:ml-20 2xl:mt-0">
+        {/* Updated with Cloudinary URL */}
         <div
-          style={{ backgroundImage: `url('/src/assets/img22.png')`}}
+          style={{ backgroundImage: `url('${img22Url}')` }}
           className="h-[60%] w-full bg-cover bg-center rounded-2xl md:w-[60%] md:h-[70%] xl:ml-2 xl:h-[70%] xl:w-[50%] 2xl:w-[40%] 2xl:h-[70%]"
         ></div>
 

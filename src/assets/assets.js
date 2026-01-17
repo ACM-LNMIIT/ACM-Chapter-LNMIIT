@@ -1,67 +1,7 @@
-import Kushagra from "./Kushagra.jpeg"
-import Yashi from "./Yashi.jpeg";
-import Mainik from "./Mainik.jpeg";
-import Nikhil from "./Nikhil.jpeg";
-import Nishit from "./Nishit.jpeg";
-import Manbhav from "./Manbhav.jpeg";
-import Dhingra from "./Dhingra.jpeg";
-import Samyak from "./Samyak.jpeg";
-import Bitan from "./Bitan.jpeg";
-import SohamPal from "./SohamPal.jpeg";
-import Shivraj from "./Shivraj.jpeg";
-import KushagraRajput from "./KushagraRajput.jpeg";
-import LaharJoshi from "./LaharJoshi.jpeg"; 
-import Karthik from "./Karthik.jpeg";
-import Keshav from "./Keshav.jpeg";
-import Prince from "./Prince.jpeg";
-
-import linkedin from "./linkedin.png";
-import github from "./github.png";
-import twitter from "./twitter.png";
-import img1 from "./img1.png";
-import img2 from "./img2.png";
-import img3 from "./img3.png";
-import img4 from "./img4.png";
-import img5 from "./img5.png";
-import img6 from "./img6.png";
-import img7 from "./img7.png";
-import img8 from "./img8.png";
-import img9 from "./img9.png";
-import img10 from "./img10.png";
-import img11 from "./Img11.png";
-import img12 from "./img12.png";
 import bg from "./bg.png";
 import Buttonbg from "./buttonbg.png";
 
 export const assets = {
-  Yashi,
-  Kushagra,
-  Mainik,
-  Nikhil,
-  Nishit,
-  Manbhav,
-  SohamPal,
-  Shivraj,
-  Dhingra,
-  Samyak,
-  Bitan,
-  LaharJoshi,
-  KushagraRajput,
-  Keshav,
-  Karthik,
-  Prince,
-  img1,
-  img2,
-  img3,
-  img4,
-  img5,
-  img6,
-  img7,
-  img8,
-  img9,
-  img10,
-  img11,
-  img12,
   bg,
   Buttonbg,
 };
@@ -97,60 +37,66 @@ export const teamMembers = [
   {
     _id: "mem1",
     name: "Yashi Srivastava",
-    image: Yashi,
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1768627891/Yashi_c6d5d3.jpg",
     designation: "Chairperson",
     techStack: ["WEBD", "AI/ML"],
     Handles: ["twitter", "linkedin", "github"],
-    domain:"core",
+    domain: "core",
   },
   {
     _id: "mem2",
     name: "Kushagra Garg",
-    image: Kushagra,
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1768627890/Kushagra_rhdoz4.jpg",
     designation: "Vice Chairperson",
     techStack: ["WEBD", "AI/ML"],
     Handles: ["twitter", "linkedin", "github"],
-    domain:"core",
+    domain: "core",
   },
   {
     _id: "mem3",
     name: "Mainak Das",
-    image: Mainik,
-    designation: "Secretary", 
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1768627890/Mainik_ug6ack.jpg",
+    designation: "Secretary",
     techStack: ["WEBD", "BACKEND"],
     handles: ["twitter", "linkedin", "github"],
-    domain:"core",
+    domain: "core",
   },
   {
     _id: "mem4",
     name: "Nikhil Gupta",
-    image: Nikhil,
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1768628837/Nikhil_mhsit9.jpg",
     designation: "Treasurer ",
     techStack: ["AI/ML"],
     Handles: ["twitter", "linkedin", "github"],
-    domain:"core",
+    domain: "core",
   },
 
-  
   // 🔹 WEB DEVELOPMENT LEADS (3)
   {
     _id: "web1",
     name: "Nishit Luhadia",
-    image: Nishit,
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1768627890/Nishit_bosolb.jpg",
     designation: "Web Dev Lead",
     domain: "webd",
   },
   {
     _id: "web2",
     name: "Manbhav Singh",
-    image: Manbhav,
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1768627890/Manbhav_wbqbsh.jpg",
     designation: "Web Dev Lead",
     domain: "webd",
   },
   {
     _id: "web3",
     name: "Bhagya Dhingra",
-    image: Dhingra,
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1768628958/Dhingra_cc80ey.jpg",
     designation: "Web Dev Lead",
     domain: "webd",
   },
@@ -159,44 +105,27 @@ export const teamMembers = [
   {
     _id: "ai1",
     name: "Shivraj singh yadav",
-    image: Shivraj,
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1768627890/Shivraj_dglvz4.jpg",
     designation: "AI/ML Lead",
     domain: "aiml",
   },
   {
     _id: "ai2",
     name: "Samyak chabbra",
-    image: Samyak,
-    designation: "AI/ML Lead",
-    domain: "aiml",
-  },
-  {
-    _id: "ai3",
-    name: "Bitan Das",
-    image: Bitan,
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1768627890/Samyak_uj8hnb.jpg",
     designation: "AI/ML Lead",
     domain: "aiml",
   },
 
   // 🔹 CREATIVE DOMAIN (3)
-  {
-    _id: "cre1",
-    name: "Kushagra Rajput",
-    image: KushagraRajput,
-    designation: "Creative Lead",
-    domain: "creative",
-  },
-  {
-    _id: "cre2",
-    name: "Lahar Joshi",
-    image: LaharJoshi,
-    designation: "Creative Lead",
-    domain: "creative",
-  },
+
   {
     _id: "cre3",
     name: "Soham Pal",
-    image: SohamPal,
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1768627891/SohamPal_czh9lj.jpg",
     designation: "Creative Lead",
     domain: "creative",
   },
@@ -205,74 +134,89 @@ export const teamMembers = [
   {
     _id: "cp1",
     name: "Kartik Awasthi",
-    image: Karthik,
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1768627889/Karthik_grmzu1.jpg",
     designation: "CP Lead",
     domain: "cp",
   },
   {
     _id: "cp2",
-    name: "Keshav Sharma",
-    image: Keshav,
+    name: "Keshav",
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1768627889/Keshav_yeirtz.jpg",
     designation: "CP Lead",
     domain: "cp",
   },
   {
     _id: "cp3",
     name: "Prince",
-    image: Prince,
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1768627890/Prince_dim4r1.jpg",
     designation: "CP Lead",
     domain: "cp",
   },
-];  
+];
 
 export const imageAssets = [
   {
     _id: "img1",
-    image: img1,
+    image:
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768632668/Img11_rxdkrm.png",
   },
   {
     _id: "img2",
-    image: img2,
+    image:
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768632668/img2_dxlrdp.png",
   },
   {
     _id: "img3",
-    image: img3,
+    image:
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768632668/img1_ofsodd.png",
   },
   {
     _id: "img4",
-    image: img4,
+    image:
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768632668/img12_kiju78.png",
   },
   {
     _id: "img5",
-    image: img5,
+    image:
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768632668/img10_hz8hs1.png",
   },
   {
     _id: "img6",
-    image: img6,
+    image:
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768632667/img9_zfqd1r.png",
   },
   {
     _id: "img7",
-    image: img7,
+    image:
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768632667/img8_mcqdax.png",
   },
   {
     _id: "img8",
-    image: img8,
+    image:
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768632667/img6_vjywam.png",
   },
   {
     _id: "img9",
-    image: img9,
+    image:
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768632667/img4_lujwu1.png",
   },
   {
     _id: "img10",
-    image: img10,
+    image:
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768632667/img5_etkhpg.png",
   },
 
   {
     _id: "img11",
-    image: img11,
+    image:
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768632667/img3_ynq1xe.png",
   },
   {
     _id: "img12",
-    image: img12,
+    image:
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768632667/img7_wjwv15.png",
   },
 ];

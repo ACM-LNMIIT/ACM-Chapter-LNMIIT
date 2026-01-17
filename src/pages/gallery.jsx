@@ -150,53 +150,113 @@
 // export default Gallery;
 import { useState } from "react";
 
-// Import all ACM images
-import acm1 from "../assets/acm1.webp";
-import acm2 from "../assets/acm2.webp";
-import acm3 from "../assets/acm3.webp";
-import acm4 from "../assets/acm4.webp";
-import acm5 from "../assets/acm5.webp";
-import acm6 from "../assets/acm6.webp";
-
-// Import all BOR images
-import bor1 from "../assets/bor1.webp";
-import bor2 from "../assets/bor2.jpeg";
-import bor3 from "../assets/bor3.webp";
-import bor4 from "../assets/bor4.webp";
-import bor5 from "../assets/bor5.webp";
-import bor6 from "../assets/bor6.webp";
-
-// Import all ESP images
-import esp1 from "../assets/esp1.webp";
-import esp4 from "../assets/esp4.webp";
-import esp5 from "../assets/esp5.webp";
-import esp6 from "../assets/esp6.jpg";
-
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const galleryItems = [
     // ACM Orientation Images (6)
-    { id: 1, category: "acm", title: "ACM Orientation Session 1", image: acm1 },
-    { id: 2, category: "acm", title: "ACM Orientation Session 2", image: acm2 },
-    { id: 3, category: "acm", title: "ACM Orientation Session 3", image: acm3 },
-    { id: 4, category: "acm", title: "ACM Orientation Session 4", image: acm4 },
-    { id: 5, category: "acm", title: "ACM Orientation Session 5", image: acm5 },
-    { id: 6, category: "acm", title: "ACM Orientation Session 6", image: acm6 },
+    {
+      id: 1,
+      category: "acm",
+      title: "ACM Orientation Session 1",
+      image:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583371/acm1_wuevig.webp",
+    },
+    {
+      id: 2,
+      category: "acm",
+      title: "ACM Orientation Session 2",
+      image:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583384/acm2_nku2oq.webp",
+    },
+    {
+      id: 3,
+      category: "acm",
+      title: "ACM Orientation Session 3",
+      image:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583404/acm3_zjgmqd.webp",
+    },
+    {
+      id: 4,
+      category: "acm",
+      title: "ACM Orientation Session 4",
+      image:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583410/acm4_zgtrv0.webp",
+    },
+    {
+      id: 5,
+      category: "acm",
+      title: "ACM Orientation Session 5",
+      image:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583386/acm5_kjgdrs.webp",
+    },
+    {
+      id: 6,
+      category: "acm",
+      title: "ACM Orientation Session 6",
+      image:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626425/acm6_oxbdmd.webp",
+    },
 
     // Big O Rush Images (6)
-    { id: 7, category: "bor", title: "Big O Rush Activity 1", image: bor1 },
-    { id: 8, category: "bor", title: "Big O Rush Activity 2", image: bor2 },
-    { id: 9, category: "bor", title: "Big O Rush Activity 3", image: bor3 },
-    { id: 10, category: "bor", title: "Big O Rush Activity 4", image: bor4 },
-    { id: 11, category: "bor", title: "Big O Rush Activity 5", image: bor5 },
-    { id: 12, category: "bor", title: "Big O Rush Activity 6", image: bor6 },
+    {
+      id: 7,
+      category: "bor",
+      title: "Big O Rush Activity 1",
+      image:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583433/bor3_lra9c1.webp",
+    },
+    {
+      id: 8,
+      category: "bor",
+      title: "Big O Rush Activity 2",
+      image:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583399/bor4_p5wu1v.webp",
+    },
+    {
+      id: 9,
+      category: "bor",
+      title: "Big O Rush Activity 3",
+      image:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583394/bor5_s8tihc.webp",
+    },
+    {
+      id: 10,
+      category: "bor",
+      title: "Big O Rush Activity 4",
+      image:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583391/bor6_oat3ew.webp",
+    },
 
     // ESP Talk Images (6)
-    { id: 13, category: "esp", title: "ESP Talk Session 1", image: esp1 },
-    { id: 16, category: "esp", title: "ESP Talk Session 4", image: esp4 },
-    { id: 17, category: "esp", title: "ESP Talk Session 5", image: esp5 },
-    { id: 18, category: "esp", title: "ESP Talk Session 6", image: esp6 },
+    {
+      id: 13,
+      category: "esp",
+      title: "ESP Talk Session 1",
+      image:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583425/esp1_kyvsme.webp",
+    },
+    {
+      id: 16,
+      category: "esp",
+      title: "ESP Talk Session 4",
+      image:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583378/esp4_s366f5.webp",
+    },
+    {
+      id: 17,
+      category: "esp",
+      title: "ESP Talk Session 5",
+      image:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583378/esp4_s366f5.webp",
+    },
+    {
+      id: 18,
+      category: "esp",
+      title: "ESP Talk Session 6",
+      image:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583416/esp5_ddhtst.webp",
+    },
   ];
 
   const categories = ["all", "acm", "bor", "esp"];
@@ -234,10 +294,10 @@ const Gallery = () => {
               {cat === "all"
                 ? "All Events"
                 : cat === "acm"
-                ? "ACM Orientation"
-                : cat === "bor"
-                ? "Big O Rush"
-                : "ESP Talk"}
+                  ? "ACM Orientation"
+                  : cat === "bor"
+                    ? "Big O Rush"
+                    : "ESP Talk"}
             </button>
           ))}
         </div>
@@ -266,8 +326,8 @@ const Gallery = () => {
                   {item.category === "acm"
                     ? "ACM Orientation"
                     : item.category === "bor"
-                    ? "Big O Rush"
-                    : "ESP Talk"}
+                      ? "Big O Rush"
+                      : "ESP Talk"}
                 </p>
               </div>
             </div>

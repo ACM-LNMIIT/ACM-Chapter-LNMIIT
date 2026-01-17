@@ -1,16 +1,3 @@
-// Import all images
-import acmSpeaker from "../assets/acmSpeaker.jpeg";
-import bigORush from "../assets/bigORush.webp";
-import codeQuest from "../assets/codeQuest.jpeg";
-import orientation from "../assets/orientation.jpeg";
-import recruit from "../assets/recruit.jpeg";
-
-// Import upcoming event posters
-import bor2 from "../assets/bor2.JPEG";
-import insightX from "../assets/insightX.JPEG";
-import promptWars from "../assets/promptWars.JPEG";
-import codeQuest2 from "../assets/codeQPoster.JPG";
-
 // Helper function to parse date strings
 const parseDate = (dateString) => {
   if (!dateString || dateString.toLowerCase().includes("to be declared")) {
@@ -46,7 +33,8 @@ const allEventsData = {
       attendees: "50+",
       category: "recruitment",
       status: "completed",
-      popupImage: orientation,
+      popupImage:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626932/orientation_qq8smz.jpg",
       pdfLink: "/pdfs/acm-orientation.pdf",
       content: {
         heading: "ACM Domains Orientation and Recruitment",
@@ -75,7 +63,8 @@ const allEventsData = {
       attendees: "100+",
       category: "seminar",
       status: "completed",
-      popupImage: acmSpeaker,
+      popupImage:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626901/acmSpeaker_ofnudr.jpg",
       pdfLink: "/pdfs/ai-digital-health.pdf",
       content: {
         heading: "Distinguished Speaker Talk - AI in Digital Health",
@@ -105,7 +94,8 @@ const allEventsData = {
       attendees: "150+",
       category: "workshop",
       status: "completed",
-      popupImage: codeQuest,
+      popupImage:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626846/codeQuest_l7cizo.png",
       pdfLink: "/pdfs/codequest.pdf",
       content: {
         heading: "CodeQuest - The Ultimate Coding Challenge",
@@ -134,7 +124,8 @@ const allEventsData = {
       attendees: "50+",
       category: "hackathon",
       status: "completed",
-      popupImage: bigORush,
+      popupImage:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768631118/bigORush_ge8itg.jpg",
       pdfLink: "/pdfs/big-o-rush.pdf",
       content: {
         heading: "Big O Rush - Code Hunt",
@@ -164,7 +155,8 @@ const allEventsData = {
       attendees: "100+",
       category: "recruitment",
       status: "completed",
-      popupImage: recruit,
+      popupImage:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626828/recruit_ux6tge.jpg",
       pdfLink: "/pdfs/y24-recruitment.pdf",
       content: {
         heading: "Recruitment for Y-24 Batch",
@@ -196,7 +188,8 @@ const allEventsData = {
       attendees: "100+",
       category: "hackathon",
       status: "upcoming",
-      popupImage: bor2,
+      popupImage:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626893/bor2_pnmzl3.jpg",
       registrationLink: "#register-bor2",
     },
     {
@@ -210,7 +203,8 @@ const allEventsData = {
       attendees: "60",
       category: "workshop",
       status: "upcoming",
-      popupImage: insightX,
+      popupImage:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583407/insightX_e9wj6l.jpg",
       registrationLink: "#register-insightx",
     },
     {
@@ -224,7 +218,8 @@ const allEventsData = {
       attendees: "80",
       category: "workshop",
       status: "upcoming",
-      popupImage: promptWars,
+      popupImage:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626825/promptWars_gu5fkb.jpg",
       registrationLink: "#register-promptwars",
     },
     {
@@ -238,7 +233,8 @@ const allEventsData = {
       attendees: "80",
       category: "workshop",
       status: "upcoming",
-      popupImage: codeQuest2, // Using same image for now
+      popupImage:
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626884/codeQPoster_p4guqe.jpg",
       registrationLink:
         "https://docs.google.com/forms/d/e/1FAIpQLScTiJQieby_mEoTtMj6Iohe-q4RPSx6TrxDiJaDVNQS6tLi_g/viewform?usp=sharing&ouid=102111210845982472815",
     },
