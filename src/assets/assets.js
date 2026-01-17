@@ -1,10 +1,10 @@
-import bg from "./bg.png";
-import Buttonbg from "./buttonbg.png";
+// import bg from "./bg.png";
+// import Buttonbg from "./buttonbg.png";
 
-export const assets = {
-  bg,
-  Buttonbg,
-};
+// export const assets = {
+//   bg,
+//   Buttonbg,
+// };
 
 // export const specialityData = [
 //   {

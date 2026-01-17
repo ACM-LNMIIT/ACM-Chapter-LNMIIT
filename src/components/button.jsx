@@ -1,5 +1,5 @@
 import { useState } from "react";
-import glow from "../assets/glow.png";
+// import glow from "../assets/glow.png";
 
 export default function Button({ text, onClick }) {
   const [hover, setHover] = useState(false);
@@ -8,7 +8,7 @@ export default function Button({ text, onClick }) {
     <div
       onClick={onClick}
       style={{
-        backgroundImage: `url(${glow})`,
+        backgroundImage: `url(${"https://res.cloudinary.com/dx37fiakv/image/upload/v1768632217/glow_ssyjx7.png"})`,
         backgroundSize: "100% 200%",
         backgroundRepeat: "no-repeat",
       }}
