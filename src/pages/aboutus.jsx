@@ -125,9 +125,12 @@ const AboutUs = () => {
 					<p className="text-lg text-gray-400 dark:text-gray-600 mb-8">
 						Be part of something bigger. Connect with like-minded professionals and students.
 					</p>
-                    <Link to="/membership">
-                        <Button text="Become a Member" />
-                    </Link>					
+                    <div className="flex justify-center">
+  						<Link to="/membership">
+    						<Button text="Become a Member" />
+  						</Link>
+					</div>
+	
 				</motion.div>
 			</div>
 		</div>

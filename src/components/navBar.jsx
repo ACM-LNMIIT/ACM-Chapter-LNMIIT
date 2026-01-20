@@ -44,32 +44,40 @@ export default function NavBar({ isOpen, setOpen }) {
       initial={{ y: "-98%", opacity: 0.2 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 90, damping: 30 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-[#020B05] dark:bg-[#C5C4AF] dark:text-gray-900 max-sm:justify-end max-sm:px-3 gap-8 h-[7vh] max-h-[70px] min-h-[45px] border-b-2 px-[150px] flex justify-between items-center text-[1.05rem] text-slate-200 border-slate-200/30"
-    >
+      className="fixed top-0 left-0 right-0 z-50 bg-[#020B05] dark:bg-[#C5C4AF] dark:text-gray-900 max-sm:justify-end max-sm:px-3 gap-8 h-[7vh] max-h-[70px] min-h-[45px] border-b-2 pl-5 sm:pl-12 lg:pl-24 pr-5
+      flex justify-between items-center text-[1.05rem] text-slate-200 border-slate-200/30" >
       <div className="w-[30%]"></div>
-      {titles.map((e, i) => (
-        <Link
-          key={i}
-          to={getPath(e)}
-          className="hover-underline-animation cursor-pointer"
-        >
-          {e}
-        </Link>
-      ))}
-      <button
-        onClick={toggleTheme}
-        className="p-2 rounded-full hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors duration-200"
-        aria-label="Toggle theme"
+     <div className="ml-auto flex items-center gap-4">
+ <div className="hidden md:flex gap-4 lg:gap-6 items-center">
+    {titles.map((e, i) => (
+      <Link
+        key={i}
+        to={getPath(e)}
+       className="hover-underline-animation cursor-pointer whitespace-nowrap"
+
       >
-        {isDark ? (
-          <Sun className="w-5 h-5 text-zinc-950" />
-        ) : (
-          <Moon className="w-5 h-5 text-slate-200" />
-        )}
-      </button>
-      <div className="sm:hidden">
-        <Hamburger toggled={isOpen} toggle={setOpen} />
-      </div>
+        {e}
+      </Link>
+    ))}
+  </div>
+
+  <button
+    onClick={toggleTheme}
+    className="p-2 rounded-full hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors duration-200"
+    aria-label="Toggle theme"
+  >
+    {isDark ? (
+      <Sun className="w-5 h-5 text-zinc-950" />
+    ) : (
+      <Moon className="w-5 h-5 text-slate-200" />
+    )}
+  </button>
+
+  <div className="md:hidden">
+    <Hamburger toggled={isOpen} toggle={setOpen} />
+  </div>
+</div>
+
     </motion.div>
   );
 }

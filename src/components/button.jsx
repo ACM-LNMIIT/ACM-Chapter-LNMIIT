@@ -1,24 +1,30 @@
-import { useState } from "react";
-// import glow from "../assets/glow.png";
-
-export default function Button({ text, onClick }) {
-  const [hover, setHover] = useState(false);
-
+ export default function Button({ text, onClick, type = "button" }) {
   return (
-    <div
+    <button
+      type={type}
       onClick={onClick}
-      style={{
-       // backgroundImage: `url(${"https://res.cloudinary.com/dx37fiakv/image/upload/v1768632217/glow_ssyjx7.png"})`,
-        backgroundSize: "100% 200%",
-        backgroundRepeat: "no-repeat",
-      }}
-      onMouseLeave={() => setHover(false)}
-      onMouseEnter={() => setHover(true)}
-      className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white rounded-3xl"
+      className="
+        px-6 py-2.5
+        rounded-md
+        font-semibold
+        tracking-wide
+        transition-all duration-200
+
+        /* LIGHT MODE (cream background safe) */
+        bg-slate-900
+        text-white
+        border border-slate-900
+        shadow-sm
+        hover:bg-slate-800
+
+        /* DARK MODE */
+        dark:bg-slate-200
+        dark:text-slate-900
+        dark:border-slate-300
+        dark:hover:bg-white
+      "
     >
-      <div className={`${hover ? "cursor-pointer" : ""} py-2.5 px-6 rounded-3xl`}>
-        {text} &rarr;
-      </div>
-    </div>
+      {text}
+    </button>
   );
 }
