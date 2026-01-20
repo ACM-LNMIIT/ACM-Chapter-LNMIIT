@@ -45,7 +45,7 @@ export default function Home() {
       <div className="mt-7 max-sm:mt-8 max-sm:mb-16 flex justify-center">
         <Button text={"Get Started Now"} onClick={handleScroll} />
       </div>
-      <motion.div
+      {/* <motion.div
         className="flex justify-center overflow-hidden mr-3"
         initial={{ y: "98%", opacity: 0.2 }}
         animate={{ y: 0, opacity: 1 }}
@@ -68,27 +68,24 @@ export default function Home() {
             alt="glow effect"
           />
         )}
-      </motion.div>
+      </motion.div> */}
       <div className="flex flex-col gap-16 mt-10">
-        <div ref={cardRef}>
-          <Card
-            k={0}
-            p={
-              "https://res.cloudinary.com/dx37fiakv/image/upload/v1768633510/pic_kcktrp.png"
-            }
-            para1={acmInfo}
-            para2={acmMotto}
-          />
-        </div>
+				<div ref={cardRef}>
+					<Card
+						title="About Us"
+						p="https://res.cloudinary.com/dx37fiakv/image/upload/v1768633510/pic_kcktrp.png"
+						para1={acmInfo}
+						para2={acmMotto}
+					/>
+				</div>
 
-        <Card
-          k={1}
-          p={
-            "https://res.cloudinary.com/dx37fiakv/image/upload/v1768633466/sir_gczfgg.png"
-          }
-          para1={acmPara}
-        />
-      </div>
+				<Card
+					title="Meet Our Chapter’s Faculty Mentor"
+					p="https://res.cloudinary.com/dx37fiakv/image/upload/v1768633466/sir_gczfgg.png"
+					para1={acmPara}
+					reverse
+				/>
+			</div>
       {/* <TeamSection /> */}
     </div>
   );

@@ -1,60 +1,50 @@
 import React from "react";
-import { cn } from "../../lib/utils";
 import { motion } from "framer-motion";
 
-const BackgroundGradient = ({ children, className, containerClassName, animate = true }) => {
+const BackgroundGradient = ({
+  children,
+  className,
+  containerClassName,
+  animate = true,
+}) => {
   const variants = {
-    initial: {
-      backgroundPosition: "0 50%",
-    },
+    initial: { backgroundPosition: "0% 50%" },
     animate: {
-      backgroundPosition: ["0 50%", "100% 50%", "0 50%"],
+      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
     },
   };
 
   return (
-    <div className={`relative p-[4px] group ${containerClassName || ""}`}>
+    <div className={`relative p-[3px] group ${containerClassName || ""}`}>
+      {/* Rounded Glow */}
       <motion.div
         variants={animate ? variants : undefined}
         initial={animate ? "initial" : undefined}
         animate={animate ? "animate" : undefined}
         transition={
           animate
-            ? {
-                duration: 5,
-                repeat: Infinity,
-                repeatType: "reverse",
-              }
+            ? { duration: 6, repeat: Infinity, repeatType: "reverse" }
             : undefined
         }
-        style={{
-          backgroundSize: animate ? "400% 400%" : undefined,
-        }}
-        className={`absolute inset-0 z-[1] opacity-0 group-hover:opacity-40 blur-md transition duration-500 will-change-transform bg-[radial-gradient(circle_farthest-side_at_0_100%,#FFD700,transparent),radial-gradient(circle_farthest-side_at_100%_0,#FF4500,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#32CD32,transparent),radial-gradient(circle_farthest-side_at_0_0,#1E90FF,#141316)]`}
-
+        style={{ backgroundSize: "300% 300%" }}
+        className="
+          absolute inset-0 z-[1]
+          rounded-lg
+          opacity-0 group-hover:opacity-30
+          blur-lg
+          transition duration-500
+          bg-[radial-gradient(circle_farthest-side_at_50%_50%,#60A5FA,transparent)]
+        "
       />
-      <motion.div
-        variants={animate ? variants : undefined}
-        initial={animate ? "initial" : undefined}
-        animate={animate ? "animate" : undefined}
-        transition={
-          animate
-            ? {
-                duration: 5,
-                repeat: Infinity,
-                repeatType: "reverse",
-              }
-            : undefined
-        }
-        style={{
-          backgroundSize: animate ? "400% 400%" : undefined,
-        }}
-        className={`absolute mx-8 inset-0 z-[1] opacity-0 group-hover:opacity-40 will-change-transform bg-[radial-gradient(circle_farthest-side_at_0_100%,#FFD700,transparent),radial-gradient(circle_farthest-side_at_100%_0,#FF4500,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#32CD32,transparent),radial-gradient(circle_farthest-side_at_0_0,#1E90FF,#141316)]`}
 
-      />
-      <div className={`relative z-10 ${className || ""}`}>{children}</div>
+      {/* Content */}
+      <div
+        className={`relative z-10 rounded-2xl overflow-hidden ${className || ""}`}
+      >
+        {children}
+      </div>
     </div>
   );
 };
 
-export default BackgroundGradient
+export default BackgroundGradient;

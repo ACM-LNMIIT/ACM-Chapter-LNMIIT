@@ -22,9 +22,15 @@ const PhotoGallery = () => {
             <Marquee pauseOnHover="true" speed={150}>
               {imageAssets.slice(0, 6).map((item, index) => (
                 <BackgroundGradient key={index}>
-                  <div className="relative group overflow-hidden shadow-lg mx-4 sm:mx-8">
+                  <div className="relative group overflow-hidden rounded-xl border-2 border-white shadow-lg mx-4 sm:mx-8">
                     <img
-                      className="h-32 w-56 sm:h-40 sm:w-72 md:h-48 md:w-80 lg:h-56 lg:w-96 object-cover"
+                      className="
+                        h-32 w-56 sm:h-40 sm:w-72 md:h-48 md:w-80 lg:h-56 lg:w-96
+                        object-cover
+                        rounded-xl
+                        transition-all duration-500 ease-out
+                        group-hover:scale-105 group-hover:-translate-y-2
+                      "
                       src={item.image || fallbackImage}
                       alt={`Event ${index + 1}`}
                     />
@@ -39,9 +45,15 @@ const PhotoGallery = () => {
             <Marquee direction="right" pauseOnHover="true" speed={150}>
               {imageAssets.slice(6, 12).map((item, index) => (
                 <BackgroundGradient key={index}>
-                  <div className="relative overflow-hidden shadow-lg mx-4 sm:mx-8">
+                  <div className="relative group overflow-hidden rounded-xl border-2 border-white shadow-lg mx-4 sm:mx-8">
                     <img
-                      className="h-32 w-56 sm:h-40 sm:w-72 md:h-48 md:w-80 lg:h-56 lg:w-96 object-cover hover:scale-105 transition-transform"
+                      className="
+                        h-32 w-56 sm:h-40 sm:w-72 md:h-48 md:w-80 lg:h-56 lg:w-96
+                        object-cover
+                        rounded-xl
+                        transition-all duration-500 ease-out
+                        group-hover:scale-105 group-hover:-translate-y-2
+                      "
                       src={item.image || fallbackImage}
                       alt={`Event ${index + 7}`}
                     />

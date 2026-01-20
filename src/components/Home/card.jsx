@@ -1,82 +1,88 @@
-import { useEffect, useState } from "react";
-// import glow2 from "../../assets/glow2.png";
 import { motion } from "motion/react";
 
-export default function Card({ k, p, para1, para2 }) {
-  const [showBounce, setShowBounce] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 400) {
-        setShowBounce(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+export default function Card({ title, p, para1, para2, reverse }) {
   return (
     <motion.div
-      animate={{
-        y: [0, showBounce ? 0 : 0, 0],
-      }}
-      transition={{
-        duration: 1.5,
-        repeat: Infinity,
-        ease: "easeInOut",
-        delay: 1.5,
-      }}
-      className="flex overflow-hidden border-0 w-[70vw] max-md:h-[50vh] max-md:w-[75vw] p-1 mx-auto rounded-[2.1rem] bg-gradient-to-r from-green-300 via-green-600 to-yellow-600 "
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="
+        w-[90%] max-w-7xl mx-auto
+        p-1 rounded-3xl
+        bg-gradient-to-r from-white via-sky-200-600 to-blue-300
+      "
     >
+      {/* Inner Card */}
       <div
-        className={`bg-[#020B05] dark:bg-[#FFFEDD] h-full w-full border-0 rounded-[2.1rem] flex  ${
-          k ? "flex-col-reverse justify-end" : " flex-col justify-end"
-        }`}
+        className="
+          bg-[#020B05] dark:bg-[#FFFEDD]
+          rounded-3xl
+          px-4 sm:px-8 md:px-12
+          py-8 sm:py-12
+        "
       >
-        <div
-          className={`flex font-semibold max-md:text-[2rem] text-[4rem] px-16 max-md:px-4 mb-12 max-md:mb-1.5 bg-gradient-to-r from-[#c4c4c2] to-[#f1f1ef8d] dark:bg-gradient-to-r dark:from-[#2b2b2b] dark:to-[#7e7e7e8d] bg-clip-text text-transparent ${
-            k ? "hidden" : ""
-          }`}
+        {/* Heading */}
+        <h2
+          className="
+            font-semibold
+            text-center sm:text-left
+            text-3xl md:text-4xl lg:text-5xl
+            mb-10
+            leading-[1.2]
+            pb-2
+            w-full
+            bg-gradient-to-r from-[#c4c4c2] to-[#f1f1ef8d]
+            dark:from-[#2b2b2b] dark:to-[#7e7e7e8d]
+            bg-clip-text text-transparent
+          "
         >
-          About Us
-        </div>
+          {title}
+        </h2>
+
+
+        {/* Content */}
         <div
-          className={`flex max-md:flex-col-reverse max-md:items-center w-full px-12 max-md:px-2 max-md:mb-1 max justify-between ${
-            k ? "" : "-mb-24"
-          }`}
+          className={`
+            flex flex-col gap-8
+            ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"}
+            items-center
+          `}
         >
-          <p className="text-white dark:text-gray-900 pt-2 text-[1.2rem] max-md:text-[0.5rem] opacity-70 w-[50%] max-md:w-full max-md:-mb-5">
-            {para1}
-            <br></br>
-            <br></br>
-            {para2}
-          </p>
-          <div
-            className={`flex w-[40%] max-md:w-[60%] max-md:mb-1 border-0 rounded-2xl overflow-hidden ${
-              k ? "-mt-12" : ""
-            }`}
+          {/* Text */}
+          <p
+            className="
+              text-white dark:text-gray-900
+              text-sm sm:text-base md:text-lg
+              leading-relaxed
+              opacity-80
+              w-full lg:w-1/2
+            "
           >
-            <img className="object-cover" src={p} alt="Card content"></img>
+            {para1}
+            {para2 && (
+              <>
+                <br />
+                <br />
+                {para2}
+              </>
+            )}
+          </p>
+
+          {/* Image */}
+          <div className="w-full lg:w-1/2 overflow-hidden rounded-2xl">
+            <img
+              src={p}
+              alt={title}
+              className="
+                w-full h-auto
+                object-cover
+                rounded-2xl
+                transition-all duration-500 ease-out
+                hover:scale-105 hover:-translate-y-2
+              "
+            />
           </div>
-        </div>
-        <div
-          className={`flex font-semibold text-[4rem] dark:bg-gradient-to-r dark:from-[#2b2b2b] dark:to-[#7e7e7e8d] max-md:pt-[7rem] max-md:px-4 max-md:text-[1.7rem] pl-12 mb-12 bg-gradient-to-r from-[#c4c4c2] to-[#9d9d9d8d] bg-clip-text text-transparent ${
-            k ? "-mt-20" : "hidden"
-          }`}
-        >
-          Meet Our Chapter's
-          <br /> Faculty Mentor
-        </div>
-        <div className={`flex relative ${!k ? "" : "rotate-180"}`}>
-          <img
-            className="object-cover"
-            src="https://res.cloudinary.com/dx37fiakv/image/upload/v1768631933/glow2_gkh5ks.png"
-            alt="Glow effect"
-          ></img>
         </div>
       </div>
     </motion.div>
