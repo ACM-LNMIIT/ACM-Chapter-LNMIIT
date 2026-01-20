@@ -4,8 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
-.gradient-txt{
-    background-image: linear-gradient(90% , red  , aqua);
-    background-clip: text;
-    color: transparent;
+.primary-gradient-text {
+  background: linear-gradient(
+    90deg,
+    #22c55e,  /* green */
+    #06b6d4,  /* cyan */
+    #3b82f6,  /* blue */
+    #8b5cf6   /* violet */
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.faq-inner-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.12),
+    rgba(34, 211, 238, 0.08)
+  );
 }

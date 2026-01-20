@@ -267,7 +267,9 @@ const Gallery = () => {
       : galleryItems.filter((item) => item.category === selectedCategory);
 
   return (
-    <div className="min-h-screen dark:bg-[#e8e9cd] bg-[#020B05] text-white dark:text-gray-900 py-20 px-4">
+    <div className="min-h-screen dark:bg-[#e8e9cd] bg-[#020B05] text-white dark:text-gray-900 pt-32 px-4">
+
+
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
