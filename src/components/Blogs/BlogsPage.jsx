@@ -35,7 +35,7 @@ export function BlogPreview({
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
-      <Card className="max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl rounded-2xl border border-[#2d2d2d]">
+      <Card className="max-w-4xl w-full max-h-[90vh] bg-black overflow-y-auto shadow-2xl rounded-2xl border border-[#2d2d2d]">
         <CardContent className="pt-6 relative">
           <button
             onClick={onClose}
@@ -156,14 +156,14 @@ export default function BlogsPage() {
               <CardFooter className="flex gap-2 mt-auto">
                 <Button
                   onClick={() => handleReadMore(blog)}
-                  className="w-full bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all"
+                  className="w-full bg-slate-700 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all"
                 >
                   <FileText className="h-4 w-4" />
                   <span>Read More</span>
                 </Button>
                 <Button
                   onClick={(e) => handleDownloadPDF(blog, e)}
-                  className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-black dark:text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all"
+                  className="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all"
                 >
                   <Download className="h-4 w-4" />
                   <span>Download PDF</span>

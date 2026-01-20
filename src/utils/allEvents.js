@@ -23,36 +23,6 @@ const parseDate = (dateString) => {
 const allEventsData = {
   past: [
     {
-      id: 1,
-      title: "ACM Domains Orientation and Recruitment",
-      date: "14/09/2024",
-      time: "1:00 PM",
-      location: "LT-05, LNMIIT",
-      description:
-        "Introduced prospective members to the various domains of the ACM Student Chapter LNMIIT, outlined responsibilities, and initiated the recruitment process.",
-      attendees: "50+",
-      category: "recruitment",
-      status: "completed",
-      popupImage:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626932/orientation_qq8smz.jpg",
-      pdfLink: "/pdfs/acm-orientation.pdf",
-      content: {
-        heading: "ACM Domains Orientation and Recruitment",
-        intro:
-          "The ACM Student Chapter LNMIIT organized an orientation event to introduce prospective members to various technical domains and kickstart the recruitment process.",
-        subheading: "Event Highlights",
-        mainContent:
-          "This in-house event provided an overview of different ACM domains including web development, competitive programming, AI/ML, and cybersecurity. Members learned about responsibilities and opportunities within the chapter.",
-        quote: "Advancing Computing as a Science and Profession",
-        applications: [
-          "Member recruitment",
-          "Domain exploration",
-          "Skill development",
-          "Community building",
-        ],
-      },
-    },
-    {
       id: 2,
       title: "Distinguished Speaker Talk - AI in Digital Health",
       date: "05/11/2024",
@@ -121,7 +91,7 @@ const allEventsData = {
       location: "LT-10, LNMIIT",
       description:
         "A hybrid event merging coding challenges with a treasure hunt across four competitive rounds, testing problem-solving, aptitude, and campus exploration skills.",
-      attendees: "50+",
+      attendees: "200+", // Updated from 50+ to 200+
       category: "hackathon",
       status: "completed",
       popupImage:
@@ -131,9 +101,9 @@ const allEventsData = {
         heading: "Big O Rush - Code Hunt",
         intro:
           "Big O Rush combined the thrill of competitive coding with an adventurous treasure hunt across the LNMIIT campus, creating a unique hackathon-style experience.",
-        subheading: "Multi-Round Challenge",
+        subheading: "🎉 Big O' Rush 2025 — Mission Accomplished! 🎉",
         mainContent:
-          "Teams of 2-4 members navigated through four competitive rounds featuring coding puzzles, aptitude challenges, and campus exploration tasks. The event culminated in a CTF-style final round with prizes including gaming keyboards, wireless earbuds, and Ferrero Rocher.",
+          "We're thrilled to announce that ACM LNMIIT successfully conducted Big O' Rush — a thrilling journey through codes, clues, and chaos! 🧩💻 With 200+ participants showcasing incredible energy, problem-solving skills, and teamwork, the event was a massive success. 🚀 From decoding complex puzzles to racing against time, the participants truly made this event unforgettable. A big thank you to everyone who joined us and to the organizing team who worked tirelessly behind the scenes! 🙌 Here's to more such exciting adventures ahead!",
         quote:
           "The Winning Team Doesn't Just Celebrate—Everyone Takes Home a Prize!",
         applications: [
@@ -141,36 +111,49 @@ const allEventsData = {
           "Problem-solving under pressure",
           "Campus exploration",
           "Capture The Flag challenges",
+          "🥇 First Place: Team Spirit KGP",
+          "🥈 Second Place: Team Crystals",
+          "🥉 Third Place: Team QuadCoders",
+          "Swipe through to catch glimpses of the action-packed evening! 📸✨",
         ],
       },
     },
     {
-      id: 5,
-      title: "Recruitment for Y-24 Batch",
-      date: "11/08/2025 - 17/08/2025",
-      time: "Online",
-      location: "Online",
+      id: 9,
+      title: "Code Quest 2.0",
+      date: "17/01/2025",
+      time: "10:00 AM",
+      location: "AI Lab, LNMIIT",
       description:
-        "Recruitment drive aimed at onboarding enthusiastic and skilled members from the Y-24 batch into the ACM LNMIIT Student Chapter.",
-      attendees: "100+",
-      category: "recruitment",
+        "Competitive coding contest featuring algorithmic challenges and problem-solving exercises.",
+      attendees: "80",
+      category: "contest",
       status: "completed",
       popupImage:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626828/recruit_ux6tge.jpg",
-      pdfLink: "/pdfs/y24-recruitment.pdf",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626884/codeQPoster_p4guqe.jpg",
+      registrationLink:
+        "https://docs.google.com/forms/d/e/1FAIpQLScTiJQieby_mEoTtMj6Iohe-q4RPSx6TrxDiJaDVNQS6tLi_g/viewform?usp=sharing&ouid=102111210845982472815",
       content: {
-        heading: "Recruitment for Y-24 Batch",
+        heading: "Code Quest 2.0",
         intro:
-          "The ACM LNMIIT Student Chapter conducted an extensive online recruitment drive to welcome fresh talent from the Y-24 batch into the community.",
-        subheading: "Selection Process",
+          "The ACM Student Chapter at LNMIIT is pleased to announce Code Quest 2.0, a competitive programming contest designed to challenge and enhance problem-solving skills among students. The contest was conducted on 17th January 2025 on the Codeforces platform and was held offline at LT-1 and LT-2.",
+        subheading: "Event Details",
         mainContent:
-          "The week-long recruitment process evaluated candidates based on technical skills, problem-solving abilities, and enthusiasm for technology. Successful candidates joined various domains including web development, competitive programming, and AI/ML.",
-        quote: "We Are Recruiting - Join the ACM LNMIIT Family",
+          "Eligibility: All LNMIIT Students | Registration Fee: Free of cost | Venue: LT-1 & LT-2 (Offline) | Platform: Codeforces | Timing: 2 PM - 5 PM | Prize Pool: ₹18,000 | 1st Prize: ₹7,000 | 2nd Prize: ₹5,000 | 3rd Prize: ₹3,000 | 4th Prize: ACM Membership (1 year – worth ₹1,475) | 5th Prize: ACM Membership (1 year – worth ₹1,475). Participants enjoyed well-curated problem sets, a competitive atmosphere, and an enriching learning experience.",
+        quote: "🚀 Code Quest 2.0 | Successfully Concluded 🚀",
         applications: [
-          "Member onboarding",
-          "Skill assessment",
-          "Domain allocation",
-          "Community expansion",
+          "ACM Student Chapter, LNMIIT successfully conducted Code Quest 2.0",
+          "The event witnessed enthusiastic participation from students across batches",
+          "Fostered competitive environment focused on algorithmic thinking",
+          "🏆 Winners: Paramveer Singh (23UCS743) — ₹7,000",
+          "Alakshendra Bhardwaj (23UCC622) — ₹5,000",
+          "Keshav Laddha (23UCS616) — ₹3,000",
+          "Aditya Kedawat (23UEC041) — ACM Membership (1 Year)",
+          "Mehul Shah (23UCS645) — ACM Membership (1 Year)",
+          "Congratulations to all winners and participants",
+          "Thanks to Nitesh Pradhan Sir, Md Imran Alam Sir, Dr. Rajbir Kaur Ma'am",
+          "Thanks to ACM India for continued support",
+          "🔔 Up Next: INSIGHT X on 25th January 2025",
         ],
       },
     },
@@ -186,7 +169,7 @@ const allEventsData = {
       description:
         "The sequel to our popular coding treasure hunt! Big O Rush returns with more challenges, puzzles, and exciting prizes.",
       attendees: "100+",
-      category: "hackathon",
+      category: "Hackathon",
       status: "upcoming",
       popupImage:
         "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626893/bor2_pnmzl3.jpg",
@@ -197,15 +180,15 @@ const allEventsData = {
       title: "InsightX: Data Science Workshop",
       date: "25/01/2025",
       time: "3:00 PM",
-      location: "Data Lab, CS Department",
+      location: "LNMIIT Campus",
       description:
         "Hands-on workshop on data visualization, analysis, and machine learning techniques using Python and modern data science tools.",
       attendees: "60",
-      category: "workshop",
+      category: "Hands-On Experience",
       status: "upcoming",
       popupImage:
         "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583407/insightX_e9wj6l.jpg",
-      registrationLink: "#register-insightx",
+      registrationLink: "https://forms.gle/YLoqy37Wq7MBDT796",
     },
     {
       id: 8,
@@ -216,27 +199,11 @@ const allEventsData = {
       description:
         "Competition to craft the most effective AI prompts. Test your skills against Large Language Models and win exciting prizes.",
       attendees: "80",
-      category: "workshop",
+      category: "competetion",
       status: "upcoming",
       popupImage:
         "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626825/promptWars_gu5fkb.jpg",
       registrationLink: "#register-promptwars",
-    },
-    {
-      id: 9,
-      title: "Code Quest",
-      date: "17/01/2025",
-      time: "10:00 AM",
-      location: "AI Lab, LNMIIT",
-      description:
-        "Competitive coding contest featuring algorithmic challenges and problem-solving exercises.",
-      attendees: "80",
-      category: "workshop",
-      status: "upcoming",
-      popupImage:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626884/codeQPoster_p4guqe.jpg",
-      registrationLink:
-        "https://docs.google.com/forms/d/e/1FAIpQLScTiJQieby_mEoTtMj6Iohe-q4RPSx6TrxDiJaDVNQS6tLi_g/viewform?usp=sharing&ouid=102111210845982472815",
     },
   ],
 };
