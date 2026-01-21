@@ -57,7 +57,7 @@ const ContactUs = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 primary-gradient-text">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
             Get In Touch
           </h1>
           <p className="text-lg text-gray-400 max-w-xl mx-auto">

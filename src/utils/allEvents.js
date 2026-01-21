@@ -121,7 +121,7 @@ const allEventsData = {
     {
       id: 9,
       title: "Code Quest 2.0",
-      date: "17/01/2025",
+      date: "17/01/2026",
       time: "10:00 AM",
       location: "AI Lab, LNMIIT",
       description:
@@ -178,7 +178,7 @@ const allEventsData = {
     {
       id: 7,
       title: "InsightX: Data Science Workshop",
-      date: "25/01/2025",
+      date: "25/01/2026",
       time: "3:00 PM",
       location: "LNMIIT Campus",
       description:
@@ -199,7 +199,7 @@ const allEventsData = {
       description:
         "Competition to craft the most effective AI prompts. Test your skills against Large Language Models and win exciting prizes.",
       attendees: "80",
-      category: "competetion",
+      category: "competition",
       status: "upcoming",
       popupImage:
         "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626825/promptWars_gu5fkb.jpg",

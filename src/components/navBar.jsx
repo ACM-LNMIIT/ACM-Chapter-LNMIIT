@@ -18,21 +18,21 @@ export default function NavBar({ isOpen, setOpen }) {
     }
   }, []);
 
-  const toggleTheme = () => {
-    const newDarkMode = !isDark;
-    setIsDark(newDarkMode);
-    if (newDarkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("darkMode", "true");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("darkMode", "false");
-    }
-    // Dispatch custom event for theme change
-    window.dispatchEvent(
-      new CustomEvent("themeChange", { detail: { isDark: newDarkMode } })
-    );
-  };
+  // const toggleTheme = () => {
+  //   const newDarkMode = !isDark;
+  //   setIsDark(newDarkMode);
+  //   if (newDarkMode) {
+  //     document.documentElement.classList.add("dark");
+  //     localStorage.setItem("darkMode", "true");
+  //   } else {
+  //     document.documentElement.classList.remove("dark");
+  //     localStorage.setItem("darkMode", "false");
+  //   }
+  //   // Dispatch custom event for theme change
+  //   window.dispatchEvent(
+  //     new CustomEvent("themeChange", { detail: { isDark: newDarkMode } })
+  //   );
+  // };
 
   const getPath = (title) => {
     const path = title.toLowerCase().replace(/\s+/g, "");
@@ -61,7 +61,7 @@ export default function NavBar({ isOpen, setOpen }) {
     ))}
   </div>
 
-  <button
+  {/* <button
     onClick={toggleTheme}
     className="p-2 rounded-full hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors duration-200"
     aria-label="Toggle theme"
@@ -71,7 +71,7 @@ export default function NavBar({ isOpen, setOpen }) {
     ) : (
       <Moon className="w-5 h-5 text-slate-200" />
     )}
-  </button>
+  </button> */}
 
   <div className="md:hidden">
     <Hamburger toggled={isOpen} toggle={setOpen} />

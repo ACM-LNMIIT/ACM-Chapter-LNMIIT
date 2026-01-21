@@ -202,7 +202,7 @@ const Events = () => {
           className="text-center mb-16"
         >
           <h1
-            className={`text-5xl md:text-6xl font-bold mb-4 ${
+            className={`text-5xl md:text-6xl font-bold  mb-5 pb-3 leading-tight bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent ${
               isDarkMode
                 ? titleColors.upcoming.dark
                 : titleColors.upcoming.light

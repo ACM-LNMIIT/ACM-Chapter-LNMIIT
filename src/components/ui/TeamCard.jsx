@@ -73,7 +73,7 @@ const TeamCard = ({ member, idx }) => {
                     </a>
                   )}
 
-                  {member.handles.email && (
+                  {/* {member.handles.email && (
                     <a
                       href={`https://mail.google.com/mail/?view=cm&to=${member.handles.email}`}
                       target="_blank"
@@ -82,7 +82,7 @@ const TeamCard = ({ member, idx }) => {
                     >
                       <MailIcon size={20} />
                     </a>
-                  )}
+                  )} */}
                 </div>
               )}
 

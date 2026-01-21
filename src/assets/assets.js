@@ -111,7 +111,7 @@ export const teamMembers = [
     designation: "AI/ML Lead",
     domain: "aiml",
     handles: {
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/samyak-chhabra-478697280",
       instagram: "https://www.instagram.com/samyak_chhabra7/",
       email: "23ucs744@lnmiit.ac.in",
     },

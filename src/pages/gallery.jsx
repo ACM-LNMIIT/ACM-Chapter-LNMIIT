@@ -1,4 +1,4 @@
-// import { motion } from "motion/react";
+import { motion } from "motion/react";
 // import { useState } from "react";
 
 // const Gallery = () => {
@@ -267,45 +267,58 @@ const Gallery = () => {
       : galleryItems.filter((item) => item.category === selectedCategory);
 
   return (
-    <div className="min-h-screen dark:bg-[#e8e9cd] bg-[#020B05] text-white dark:text-gray-900 pt-32 px-4">
+    <div className="min-h-screen dark:bg-[#e8e9cd] bg-[#020B05] text-white dark:text-gray-900 pt-16 px-4">
 
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto pb-10">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
-            ACM Photo Gallery
-          </h1>
-          <p className="text-xl text-gray-400 dark:text-gray-600">
-            Moments from our events and activities
-          </p>
-        </div>
+        <motion.div
+					initial={{ opacity: 0, y: 20 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5 }}
+					className="text-center mb-8">
+          {/* <div className="text-center mb-14"> */}
+            <h1 className="text-5xl md:text-6xl font-bold  mb-5 pb-3 leading-tight bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+              ACM Photo Gallery
+            </h1>
+            <p className="text-xl text-gray-400 dark:text-gray-600">
+              Moments from our events and activities
+            </p>
+          {/* </div> */}
+        </motion.div>
 
         {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat)}
-              className={`px-6 py-2 rounded-full font-semibold capitalize ${
-                selectedCategory === cat
-                  ? "bg-gradient-to-r from-green-500 to-blue-500 text-white"
-                  : "bg-gray-800 dark:bg-gray-200 text-gray-300 dark:text-gray-700"
-              }`}
-            >
-              {cat === "all"
-                ? "All Events"
-                : cat === "acm"
-                  ? "ACM Orientation"
-                  : cat === "bor"
-                    ? "Big O Rush"
-                    : "ESP Talk"}
-            </button>
-          ))}
+          <motion.div
+					initial={{ opacity: 0, y: 10 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5, delay: 0.1 }}
+					className="flex flex-wrap justify-center gap-4 mb-5">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setSelectedCategory(cat)}
+                className={`px-6 py-2 rounded-full font-semibold capitalize ${
+                  selectedCategory === cat
+                    ? "bg-gradient-to-r from-green-500 to-blue-500 text-white"
+                    : "bg-gray-800 dark:bg-gray-200 text-gray-300 dark:text-gray-700"
+                }`}
+              >
+                {cat === "all"
+                  ? "All Events"
+                  : cat === "acm"
+                    ? "ACM Orientation"
+                    : cat === "bor"
+                      ? "Big O Rush"
+                      : "ESP Talk"}
+              </button>
+            ))}
+          </motion.div>
         </div>
 
         {/* Gallery Grid - NO HOVER EFFECTS */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
           {filteredItems.map((item) => (
             <div
               key={item.id}

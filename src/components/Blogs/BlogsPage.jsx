@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "motion/react";
 import {
   Card,
   CardContent,
@@ -117,14 +118,19 @@ export default function BlogsPage() {
   return (
     <div className="min-h-screen bg-[#020B05] text-white px-4 dark:bg-[#e8e9cd]">
       <div className="container mx-auto py-10">
-        <div className="mb-10 text-center">
-          <p className="text-[3.5rem] max-sm:text-[1.5rem] font-bold bg-gradient-to-r from-[#F1F1EF] to-[#f1f1ef8d] dark:from-[#020B05] dark:to-[#020B05] bg-clip-text text-transparent">
+         <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mb-10 text-center"
+        >
+          <p className="text-5xl md:text-6xl font-bold mb-1 pb-3 leading-tight bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
             Our Blogs
           </p>
           <p className="text-[1.5rem] max-sm:text-[1.5rem] font-bold bg-gradient-to-b from-[#9f9f9f] to-[#8383838d] dark:bg-gradient-to-b dark:from-[#3d3d3d] dark:to-[#3838388d] bg-clip-text text-transparent">
             Discover our latest and updated collection of informative blogs
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {sortedBlogs.map((blog) => (

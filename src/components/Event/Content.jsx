@@ -1,6 +1,6 @@
 import "aos/dist/aos.css";
-import { ChevronDown } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import Button from "../button.jsx";
 
 function Content() {
   const navigate = useNavigate();
@@ -11,9 +11,11 @@ function Content() {
   const img22Url =
     "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626901/acmSpeaker_ofnudr.jpg"; // UPDATED URL
 
-  const handleSeeMore = () => {
-    navigate("/events");
-  };
+const handleSeeMore = () => {
+  navigate("/events");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 
   return (
     <div className="relative">
@@ -44,16 +46,10 @@ function Content() {
         data-aos-duration="800"
         className="flex justify-center mt-12 mb-20"
       >
-        <button
-          onClick={handleSeeMore}
-          className="group flex items-center gap-3 px-8 py-4 bg-blue-500 dark:bg-blue-600 text-white rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+        <Button
+          onClick={handleSeeMore} text="Get Started Now"
         >
-          <span className="text-lg font-semibold">Explore Events</span>
-          <ChevronDown
-            size={24}
-            className="group-hover:translate-y-1 transition-transform duration-300"
-          />
-        </button>
+        </Button>
       </div>
     </div>
   );

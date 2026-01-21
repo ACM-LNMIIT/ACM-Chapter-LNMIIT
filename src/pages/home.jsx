@@ -31,20 +31,10 @@ export default function Home() {
     };
   }, []);
   const cardRef = useRef(null);
-  const handleScroll = () => {
-    cardRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-    nav("/events");
-  };
 
   return (
     <div className="min-h-fit w-screen text-white dark:text-gray-100">
       <Hero />
-      <div className="mt-7 max-sm:mt-8 max-sm:mb-16 flex justify-center">
-        <Button text={"Get Started Now"} onClick={handleScroll} />
-      </div>
       {/* <motion.div
         className="flex justify-center overflow-hidden mr-3"
         initial={{ y: "98%", opacity: 0.2 }}

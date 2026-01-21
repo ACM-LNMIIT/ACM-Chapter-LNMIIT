@@ -74,11 +74,40 @@ const Team = () => {
       </div>
 
       {/* Button */}
-      <div className='mb-4'>
+      <div className='mt-5 mb-8'>
         <Link
           to="/team"
           onClick={() => window.scrollTo({ top: 20, behavior: "smooth" })}
-          className="px-6 py-2 bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold rounded-lg transition-all transform hover:scale-105 inline-block"
+          className="px-7 py-3
+        rounded-full
+        font-semibold
+        tracking-wide
+
+        transition-all duration-300 ease-in-out
+        transform
+
+        /* BASE */
+        bg-transparent
+        text-white
+        border border-sky-300
+        shadow-md
+
+        /* HOVER */
+        hover:scale-105
+        hover:bg-gray-900
+        hover:text-white
+        hover:border-sky-400
+        hover:opacity-90
+
+        /* ACTIVE */
+        active:scale-95
+
+        /* DARK MODE */
+        dark:bg-slate-900
+        dark:text-sky-400
+        dark:border-sky-500
+        dark:hover:bg-slate-800
+        dark:hover:text-sky-300 "
         >
           Our Whole Team
         </Link>
