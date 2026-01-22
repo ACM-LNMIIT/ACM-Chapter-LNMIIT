@@ -105,7 +105,7 @@ const AboutUs = () => {
 					className="mb-16 bg-gradient-to-r from-purple-900/20 to-pink-900/20 dark:from-purple-100/10 dark:to-pink-100/10 p-8 rounded-lg border border-purple-500/30 dark:border-purple-700/30">
 					<h2 className="text-3xl font-bold mb-4">Our History</h2>
 					<p className="text-lg text-gray-300 dark:text-gray-700 leading-relaxed mb-4">
-						Founded in 15th September , ACM has been at the forefront of computing education and professional 
+						Founded on 15th September 1947 , ACM has been at the forefront of computing education and professional 
 						development. Over the years, we have grown into a thriving community of students, professionals, 
 						and industry leaders dedicated to advancing the field of computer science.
 					</p>
