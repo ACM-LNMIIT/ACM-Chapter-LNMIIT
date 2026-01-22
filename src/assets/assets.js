@@ -105,7 +105,7 @@ export const teamMembers = [
 
 {
     _id: "ai2",
-    name: "Samyak chabbra",
+    name: "Samyak chhabra",
     image:
       "https://res.cloudinary.com/dx37fiakv/image/upload/v1768627890/Samyak_uj8hnb.jpg",
     designation: "AI/ML Lead",
@@ -118,7 +118,7 @@ export const teamMembers = [
   },
   {
     _id: "ai1",
-    name: "Shivraj singh yadav",
+    name: "Shivraj Singh Yadav",
     image:
       "https://res.cloudinary.com/dx37fiakv/image/upload/v1768627890/Shivraj_dglvz4.jpg",
     designation: "AI/ML Lead",
@@ -183,6 +183,45 @@ export const teamMembers = [
     handles: {
       linkedin: "https://www.linkedin.com/in/princejain06/",
       instagram: "https://www.instagram.com/jain_prince16/",
+      email: "23ucs679@lnmiit.ac.in",
+    },
+  },
+  {
+    _id: "wd",
+    name: "Shaurya",
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1769092043/Shaurya_nyzkkl.jpg",
+    designation: "CP Lead",
+    domain: "WD",
+    handles: {
+      linkedin: "https://www.linkedin.com/in/shaurya-behra-822843373/",
+      instagram: "https://www.instagram.com/shaurya_behra_379/",
+      email: "23ucs679@lnmiit.ac.in",
+    },
+  },
+  {
+   _id: "wd",
+    name: "Rithish Reddy",
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1769092043/Rithish_f6cduy.jpg",
+    designation: "CP Lead",
+    domain: "WD",
+    handles: {
+      linkedin: "https://www.linkedin.com/in/venkata-rithish-reddy-nealaturu-8b434a319/",
+      instagram: "https://www.instagram.com/__rithish__24/",
+      email: "23ucs679@lnmiit.ac.in",
+    },
+  },
+  {
+    _id: "wd",
+    name: "Manvith Reddy",
+    image:
+      "https://res.cloudinary.com/dx37fiakv/image/upload/v1769092042/Manvith_wrkzsx.jpg",
+    designation: "CP Lead",
+    domain: "WD",
+    handles: {
+      linkedin: "https://www.linkedin.com/in/manvith-reddy-medagam-208092321/",
+      instagram: "https://www.instagram.com/manvithreddy_24/",
       email: "23ucs679@lnmiit.ac.in",
     },
   },

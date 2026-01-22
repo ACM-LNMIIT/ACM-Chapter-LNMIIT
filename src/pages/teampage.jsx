@@ -8,6 +8,7 @@ const TeamPage = () => {
   const aimlTeam = teamMembers.filter((m) => m.domain === "aiml");
   const creativeTeam = teamMembers.filter((m) => m.domain === "creative");
   const cpTeam = teamMembers.filter((m) => m.domain === "cp");
+  const WDTeam = teamMembers.filter((m) => m.domain === "WD");
 
   return (
     <div className="min-h-screen bg-[#020B05] dark:bg-[#e8e9cd] text-white dark:text-gray-900 py-10 px-4">
@@ -40,6 +41,10 @@ const TeamPage = () => {
 
         {/* CREATIVE DOMAIN  */}
         <Section title="Creative Domain Lead" members={creativeTeam} />
+
+        <Section title="Web Development Team" members={WDTeam} />
+        
+
 
       </div>
     </div>
