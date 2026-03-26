@@ -1,4 +1,3 @@
-
 export const teamMembers = [
   {
     _id: "mem1",
@@ -61,7 +60,7 @@ export const teamMembers = [
 
   // 🔹 WEB DEVELOPMENT LEADS (3)
 
-{
+  {
     _id: "web3",
     name: "Bhagya Dhingra",
     image:
@@ -103,7 +102,7 @@ export const teamMembers = [
 
   // 🔹 AI / ML LEADS (3)
 
-{
+  {
     _id: "ai2",
     name: "Samyak chhabra",
     image:
@@ -200,14 +199,15 @@ export const teamMembers = [
     },
   },
   {
-   _id: "wd",
+    _id: "wd",
     name: "Rithish Reddy",
     image:
       "https://res.cloudinary.com/dx37fiakv/image/upload/v1769092043/Rithish_f6cduy.jpg",
     designation: "CP Lead",
     domain: "WD",
     handles: {
-      linkedin: "https://www.linkedin.com/in/venkata-rithish-reddy-nealaturu-8b434a319/",
+      linkedin:
+        "https://www.linkedin.com/in/venkata-rithish-reddy-nealaturu-8b434a319/",
       instagram: "https://www.instagram.com/__rithish__24/",
       email: "23ucs679@lnmiit.ac.in",
     },
@@ -224,6 +224,17 @@ export const teamMembers = [
       instagram: "https://www.instagram.com/manvithreddy_24/",
       email: "23ucs679@lnmiit.ac.in",
     },
+  },
+  {
+    _id: "ui",
+    name: "Navya Jain",
+    image:
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1774366025/745dbc85-2b04-48ad-81f1-973cf3167a31_nkp1pg.jpg",
+      designation:"UI/UX Lead",
+      domain:"uiux",
+      handles:{
+        linkedin:"https://www.linkedin.com/in/navya-jain-216009354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      }
   },
 ];
 

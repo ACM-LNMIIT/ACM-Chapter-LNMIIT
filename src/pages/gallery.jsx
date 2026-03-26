@@ -160,102 +160,88 @@ const Gallery = () => {
       category: "acm",
       title: "ACM Orientation Session 1",
       image:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583371/acm1_wuevig.webp",
+        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774375642/blog-app/gbzniapplixthsa8v0ot.jpg",
     },
     {
       id: 2,
       category: "acm",
       title: "ACM Orientation Session 2",
       image:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583384/acm2_nku2oq.webp",
+        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774375640/blog-app/id7gdyxuhzo7orl0m3qe.jpg",
     },
     {
       id: 3,
       category: "acm",
       title: "ACM Orientation Session 3",
       image:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583404/acm3_zjgmqd.webp",
+        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774375639/blog-app/jcicr05bcq8jqbjm8xnc.jpg",
     },
     {
       id: 4,
       category: "acm",
       title: "ACM Orientation Session 4",
       image:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583410/acm4_zgtrv0.webp",
-    },
-    {
-      id: 5,
-      category: "acm",
-      title: "ACM Orientation Session 5",
-      image:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583386/acm5_kjgdrs.webp",
-    },
-    {
-      id: 6,
-      category: "acm",
-      title: "ACM Orientation Session 6",
-      image:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626425/acm6_oxbdmd.webp",
+        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774375637/blog-app/m3aqtep3xsnckvcacqep.jpg",
     },
 
-    // Big O Rush Images (6)
+    // Big O Rush Images (4)
     {
       id: 7,
       category: "bor",
       title: "Big O Rush Activity 1",
       image:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583433/bor3_lra9c1.webp",
+        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774368972/blog-app/tldyvjqhp9dlrl0c6vbs.jpg",
     },
     {
       id: 8,
       category: "bor",
       title: "Big O Rush Activity 2",
       image:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583399/bor4_p5wu1v.webp",
+        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774368969/blog-app/exiat1rskrqrzldh5wbj.jpg",
     },
     {
       id: 9,
       category: "bor",
       title: "Big O Rush Activity 3",
       image:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583394/bor5_s8tihc.webp",
+        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774368965/blog-app/fkgp9zmvmgd8aot1voah.jpg",
     },
     {
       id: 10,
       category: "bor",
       title: "Big O Rush Activity 4",
       image:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583391/bor6_oat3ew.webp",
+        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774368962/blog-app/zwkz0evu4rb6qwvupohz.jpg",
     },
 
-    // ESP Talk Images (6)
+    // ESP Talk Images (4)
     {
       id: 13,
       category: "esp",
       title: "ESP Talk Session 1",
       image:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583425/esp1_kyvsme.webp",
+        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774371122/blog-app/imurboo4wprbsolzlcfj.jpg",
     },
     {
       id: 16,
       category: "esp",
       title: "ESP Talk Session 4",
       image:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583378/esp4_s366f5.webp",
+        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774371119/blog-app/bnsposecjyk1ehtx78w3.jpg",
     },
     {
       id: 17,
       category: "esp",
       title: "ESP Talk Session 5",
       image:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583378/esp4_s366f5.webp",
+        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774371118/blog-app/snexvlflv9gjdsnkrtet.jpg",
     },
     {
       id: 18,
       category: "esp",
       title: "ESP Talk Session 6",
       image:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583416/esp5_ddhtst.webp",
+        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774371116/blog-app/myr8o218ao7pune3xd9j.jpg",
     },
   ];
 
@@ -268,32 +254,32 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen dark:bg-[#e8e9cd] bg-[#020B05] text-white dark:text-gray-900 pt-16 px-4">
-
-
       <div className="max-w-7xl mx-auto pb-10">
         {/* Header */}
         <motion.div
-					initial={{ opacity: 0, y: 20 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.5 }}
-					className="text-center mb-8">
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-8"
+        >
           {/* <div className="text-center mb-14"> */}
-            <h1 className="text-5xl md:text-6xl font-bold  mb-5 pb-3 leading-tight bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
-              ACM Photo Gallery
-            </h1>
-            <p className="text-xl text-gray-400 dark:text-gray-600">
-              Moments from our events and activities
-            </p>
+          <h1 className="text-5xl md:text-6xl font-bold  mb-5 pb-3 leading-tight bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+            ACM Photo Gallery
+          </h1>
+          <p className="text-xl text-gray-400 dark:text-gray-600">
+            Moments from our events and activities
+          </p>
           {/* </div> */}
         </motion.div>
 
         {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <motion.div
-					initial={{ opacity: 0, y: 10 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.5, delay: 0.1 }}
-					className="flex flex-wrap justify-center gap-4 mb-5">
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="flex flex-wrap justify-center gap-4 mb-5"
+          >
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -318,7 +304,6 @@ const Gallery = () => {
 
         {/* Gallery Grid - NO HOVER EFFECTS */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          
           {filteredItems.map((item) => (
             <div
               key={item.id}
