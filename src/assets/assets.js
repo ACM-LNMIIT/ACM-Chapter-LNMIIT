@@ -230,11 +230,12 @@ export const teamMembers = [
     name: "Navya Jain",
     image:
       "https://res.cloudinary.com/dwva7x2z8/image/upload/v1774366025/745dbc85-2b04-48ad-81f1-973cf3167a31_nkp1pg.jpg",
-      designation:"UI/UX Lead",
-      domain:"uiux",
-      handles:{
-        linkedin:"https://www.linkedin.com/in/navya-jain-216009354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      }
+    designation: "UI/UX Lead",
+    domain: "uiux",
+    handles: {
+      linkedin:
+        "https://www.linkedin.com/in/navya-jain-216009354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
   },
 ];
 
