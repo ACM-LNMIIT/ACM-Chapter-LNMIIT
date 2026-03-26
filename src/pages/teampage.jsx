@@ -47,9 +47,6 @@ const TeamPage = () => {
 
         {/* UI / UX TEAM  */}
         <Section title="UI / UX Team" members={uiuxTeam} />
-        
-
-
       </div>
     </div>
   );
@@ -80,7 +77,9 @@ const Section = ({ title, members, maxColumns = 4 }) => {
 
       {/* Center the grid */}
       <div className="flex justify-center">
-        <div className={`grid ${colsClass} gap-x-10 gap-y-8 justify-items-center`}>
+        <div
+          className={`grid ${colsClass} gap-x-10 gap-y-8 justify-items-center`}
+        >
           {members.map((member, idx) => (
             <TeamCard key={member._id} member={member} idx={idx} />
           ))}
@@ -89,6 +88,3 @@ const Section = ({ title, members, maxColumns = 4 }) => {
     </div>
   );
 };
-
-
-
