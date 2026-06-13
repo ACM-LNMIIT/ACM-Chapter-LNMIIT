@@ -3,7 +3,8 @@ import { imageAssets } from "../../assets/assets";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import BackgroundGradient from "../ui/background-gradient";
 
-const fallbackImage = "path/to/fallback/image.jpg";
+const fallbackImage =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='800' height='600' fill='%23333'/%3E%3Ctext x='400' y='300' text-anchor='middle' fill='%23999' font-size='24' font-family='sans-serif'%3EImage not available%3C/text%3E%3C/svg%3E";
 
 const PhotoGallery = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -133,6 +134,9 @@ const PhotoGallery = () => {
                       src={item.image || fallbackImage}
                       alt={`Event ${index + 1}`}
                       loading="lazy"
+                      onError={(e) => {
+                        e.target.src = fallbackImage;
+                      }}
                     />
                   </div>
                 </BackgroundGradient>
