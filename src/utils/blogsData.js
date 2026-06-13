@@ -5,7 +5,7 @@ export const blogsData = [
     description:
       "Begin your journey with React by understanding its core principles and learning how to create your first component with ease.",
     thumbnail:
-      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583455/react_zioxz6.png",
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781344028/false/acm-blog-images/Getting-Started-with-React-js-1-320.webp",
     pdfLink: "/pdfs/react-basics.pdf",
     date: "2024-11-15",
     content: {
@@ -41,7 +41,7 @@ export default HelloWorld;`,
     description:
       "Unlock the full potential of CSS with advanced layout systems and design patterns that enhance your website's appearance and user experience.",
     thumbnail:
-      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583455/css_diyx8d.png",
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781344027/false/acm-blog-images/advCss.webp",
     pdfLink: "/pdfs/advanced-css.pdf",
     date: "2024-12-03",
     content: {
@@ -79,7 +79,7 @@ export default HelloWorld;`,
     description:
       "Improve your JavaScript skills by adopting industry-standard best practices that lead to cleaner, more maintainable, and scalable code.",
     thumbnail:
-      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583454/javascript_ntjayz.jpg",
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781344029/false/acm-blog-images/js%20best%20practices.png",
     pdfLink: "/pdfs/js-best-practices.pdf",
     date: "2025-01-10",
     content: {
@@ -114,7 +114,7 @@ const greeting = \`Hello, \${name}! You are \${age} years old.\`;`,
     description:
       "Explore the power of Next.js and learn how it simplifies the development of server-rendered and statically generated React applications.",
     thumbnail:
-      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583448/nextjs_egw0ov.png",
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781344030/false/acm-blog-images/R.png",
     pdfLink: "/pdfs/nextjs-intro.pdf",
     date: "2025-02-05",
     content: {
@@ -149,7 +149,7 @@ export default function Home() {
     description:
       "Master the essentials of responsive design and build websites that deliver consistent user experiences across devices and screen sizes.",
     thumbnail:
-      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583449/webDesign_src0lz.jpg",
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781344124/false/acm-blog-images/responsive-web-design-website-template-vector-21965067.avif",
     pdfLink: "/pdfs/responsive-design.pdf",
     date: "2025-03-01",
     content: {
@@ -196,7 +196,7 @@ export default function Home() {
     description:
       "Learn how to make your websites inclusive and accessible by following established guidelines and implementing key accessibility features.",
     thumbnail:
-      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583424/pour-accessibility-principles_uhdjwq.png",
+      "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781344032/false/acm-blog-images/WCAG.png",
     pdfLink: "/pdfs/accessibility.pdf",
     date: "2025-03-18",
     content: {

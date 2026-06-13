@@ -154,34 +154,34 @@ const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const galleryItems = [
-    // ACM Orientation Images (6)
+    // ACM Orientation Images (4)
     {
       id: 1,
       category: "acm",
       title: "ACM Orientation Session 1",
       image:
-        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774375642/blog-app/gbzniapplixthsa8v0ot.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781343362/false/acm-gallery/acmo/IMG_3019.jpg",
     },
     {
       id: 2,
       category: "acm",
       title: "ACM Orientation Session 2",
       image:
-        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774375640/blog-app/id7gdyxuhzo7orl0m3qe.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781343363/false/acm-gallery/acmo/IMG_3025.jpg",
     },
     {
       id: 3,
       category: "acm",
       title: "ACM Orientation Session 3",
       image:
-        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774375639/blog-app/jcicr05bcq8jqbjm8xnc.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781343365/false/acm-gallery/acmo/IMG_3026.jpg",
     },
     {
       id: 4,
       category: "acm",
       title: "ACM Orientation Session 4",
       image:
-        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774375637/blog-app/m3aqtep3xsnckvcacqep.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781343367/false/acm-gallery/acmo/IMG_3034.jpg",
     },
 
     // Big O Rush Images (4)
@@ -190,28 +190,28 @@ const Gallery = () => {
       category: "bor",
       title: "Big O Rush Activity 1",
       image:
-        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774368972/blog-app/tldyvjqhp9dlrl0c6vbs.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781343378/false/acm-gallery/bor/_DSC2372.jpg",
     },
     {
       id: 8,
       category: "bor",
       title: "Big O Rush Activity 2",
       image:
-        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774368969/blog-app/exiat1rskrqrzldh5wbj.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781343380/false/acm-gallery/bor/_DSC2379.jpg",
     },
     {
       id: 9,
       category: "bor",
       title: "Big O Rush Activity 3",
       image:
-        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774368965/blog-app/fkgp9zmvmgd8aot1voah.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781343383/false/acm-gallery/bor/_DSC2396.jpg",
     },
     {
       id: 10,
       category: "bor",
       title: "Big O Rush Activity 4",
       image:
-        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774368962/blog-app/zwkz0evu4rb6qwvupohz.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781343386/false/acm-gallery/bor/_DSC2406.jpg",
     },
 
     // ESP Talk Images (4)
@@ -220,28 +220,28 @@ const Gallery = () => {
       category: "esp",
       title: "ESP Talk Session 1",
       image:
-        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774371122/blog-app/imurboo4wprbsolzlcfj.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781343369/false/acm-gallery/esp/IMG_3164.jpg",
     },
     {
       id: 16,
       category: "esp",
       title: "ESP Talk Session 4",
       image:
-        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774371119/blog-app/bnsposecjyk1ehtx78w3.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781343371/false/acm-gallery/esp/IMG_3166.jpg",
     },
     {
       id: 17,
       category: "esp",
       title: "ESP Talk Session 5",
       image:
-        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774371118/blog-app/snexvlflv9gjdsnkrtet.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781343373/false/acm-gallery/esp/IMG_3181.jpg",
     },
     {
       id: 18,
       category: "esp",
       title: "ESP Talk Session 6",
       image:
-        "https://res.cloudinary.com/dbldk8o2d/image/upload/v1774371116/blog-app/myr8o218ao7pune3xd9j.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1781343375/false/acm-gallery/esp/IMG_3196.jpg",
     },
   ];
 
