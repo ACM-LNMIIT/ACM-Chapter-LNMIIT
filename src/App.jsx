@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { motion, AnimatePresence } from "motion/react";
 import "./App.css";
 import Home from "./pages/home";
 import ComingSoon from "./pages/ComingSoon";
@@ -29,44 +30,61 @@ function App() {
 		<Router>
 			<div className="relative overflow-x-hidden">
 				<NavBar isOpen={isOpen} setOpen={setOpen} />
-				{isOpen && (
-					<div className="fixed inset-0 bg-black bg-opacity-70 sm:hidden backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
-						<div className="w-full h-full dark:bg-[#f0e9ba] bg-zinc-900 rounded-lg">
-							<div className="flex flex-col text-white dark:text-zinc-900 text-xl font-semibold justify-center items-center gap-12 h-full">
-								<div
-									onClick={() => setOpen(false)}
-									className="border-2 border-white dark:border-zinc-900 px-4 rounded-full p-2 hover:bg-white/10 dark:hover:bg-zinc-900/10 cursor-pointer transition-colors">
-									Close
-								</div>
-								<Link onClick={() => setOpen(false)} to="/">
-									Home
-								</Link>
-								<Link onClick={() => setOpen(false)} to="/aboutus">
-									About Us
-								</Link>
-								<Link onClick={() => setOpen(false)} to="/blog">
-									Blog
-								</Link>
-								<Link onClick={() => setOpen(false)} to="/gallery">
-									Gallery
-								</Link>
-								<Link onClick={() => setOpen(false)} to="/events">
-									Events
-								</Link>
-								<Link onClick={() => setOpen(false)} to="/membership">
-									Membership
-								</Link>
-								<Link onClick={() => setOpen(false)} to="/team">
-									Team
-								</Link>
-								<Link onClick={() => setOpen(false)} to="/contactus">
-									Contact Us
-								</Link>
+			<AnimatePresence>
+			{isOpen && (
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					exit={{ opacity: 0 }}
+					className="fixed inset-0 bg-black bg-opacity-70 md:hidden backdrop-blur-sm z-50"
+					onClick={() => setOpen(false)}
+				>
+					<motion.div
+						initial={{ x: "100%" }}
+						animate={{ x: 0 }}
+						transition={{ type: "spring", stiffness: 300, damping: 30 }}
+						className="absolute right-0 top-0 h-full w-[75%] max-w-sm dark:bg-[#f0e9ba] bg-zinc-900 shadow-2xl"
+						onClick={(e) => e.stopPropagation()}
+					>
+						<div className="flex flex-col text-white dark:text-zinc-900 text-xl font-semibold h-full pt-20 pb-8 px-8">
+							<div
+								onClick={() => setOpen(false)}
+								className="absolute top-4 right-4 border-2 border-white dark:border-zinc-900 px-4 rounded-full p-2 hover:bg-white/10 dark:hover:bg-zinc-900/10 cursor-pointer transition-colors">
+								Close
 							</div>
+							<nav className="flex flex-col gap-8 flex-1 justify-center">
+								{[
+									{ label: "Home", to: "/" },
+									{ label: "About Us", to: "/aboutus" },
+									{ label: "Blog", to: "/blog" },
+									{ label: "Gallery", to: "/gallery" },
+									{ label: "Events", to: "/events" },
+									{ label: "Membership", to: "/membership" },
+									{ label: "Team", to: "/team" },
+									{ label: "Contact Us", to: "/contactus" },
+								].map((item, i) => (
+									<motion.div
+										key={item.to}
+										initial={{ x: 50, opacity: 0 }}
+										animate={{ x: 0, opacity: 1 }}
+										transition={{ delay: i * 0.05 + 0.15 }}
+									>
+										<Link
+											onClick={() => setOpen(false)}
+											to={item.to}
+											className="hover:text-[#bb86fc] transition-colors"
+										>
+											{item.label}
+										</Link>
+									</motion.div>
+								))}
+							</nav>
 						</div>
-					</div>
-				)}
-				<div className="pt-[7vh]">
+					</motion.div>
+				</motion.div>
+			)}
+			</AnimatePresence>
+			<div className="pt-[7vh]">
 					{" "}
 					{/* Prevent content from going behind fixed navbar */}
 					<Routes>

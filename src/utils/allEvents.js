@@ -34,7 +34,7 @@ const allEventsData = {
       category: "seminar",
       status: "completed",
       popupImage:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626901/acmSpeaker_ofnudr.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1774367270/blog-app/gw4vaod5stil1mpdqyhl.webp",
       pdfLink: "/pdfs/ai-digital-health.pdf",
       content: {
         heading: "Distinguished Speaker Talk - AI in Digital Health",
@@ -65,7 +65,7 @@ const allEventsData = {
       category: "workshop",
       status: "completed",
       popupImage:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626846/codeQuest_l7cizo.png",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1774367277/blog-app/pd3nmrbg6wnonceo3vpl.webp",
       pdfLink: "/pdfs/codequest.pdf",
       content: {
         heading: "CodeQuest - The Ultimate Coding Challenge",
@@ -130,7 +130,7 @@ const allEventsData = {
       category: "contest",
       status: "completed",
       popupImage:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626884/codeQPoster_p4guqe.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1774367276/blog-app/eo8po2nreuvpmq3s8ywm.webp",
       registrationLink:
         "https://docs.google.com/forms/d/e/1FAIpQLScTiJQieby_mEoTtMj6Iohe-q4RPSx6TrxDiJaDVNQS6tLi_g/viewform?usp=sharing&ouid=102111210845982472815",
       content: {
@@ -172,7 +172,7 @@ const allEventsData = {
       category: "Hackathon",
       status: "upcoming",
       popupImage:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626893/bor2_pnmzl3.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1774367275/blog-app/bbkti65nyivs7ni1qhrx.webp",
       registrationLink: "#register-bor2",
     },
     {
@@ -187,7 +187,7 @@ const allEventsData = {
       category: "Hands-On Experience",
       status: "upcoming",
       popupImage:
-        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768583407/insightX_e9wj6l.jpg",
+        "https://res.cloudinary.com/dwva7x2z8/image/upload/v1774367306/blog-app/r3t85gt2ioz74hskx4tk.webp",
       registrationLink: "https://forms.gle/YLoqy37Wq7MBDT796",
     },
     {

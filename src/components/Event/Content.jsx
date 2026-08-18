@@ -9,7 +9,7 @@ function Content() {
   const img11Url =
     "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768632668/Img11_rxdkrm.png";
   const img22Url =
-    "https://res.cloudinary.com/dwva7x2z8/image/upload/v1768626901/acmSpeaker_ofnudr.jpg"; // UPDATED URL
+    "https://res.cloudinary.com/dwva7x2z8/image/upload/v1774367270/blog-app/gw4vaod5stil1mpdqyhl.webp"; // UPDATED URL
 
 const handleSeeMore = () => {
   navigate("/events");
